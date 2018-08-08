@@ -8,7 +8,8 @@ class TestFrame extends Frame
     {
         super();
         setSize( 400, 400 );
-        setLayout( new BorderLayout() );
+        setLayout( new FlowLayout() );
+        setBackground( Color.lightGray );
         add( new Button( "North" ), BorderLayout.NORTH );
         add( new Button( "South" ), BorderLayout.SOUTH );
         add( new Button( "East" ), BorderLayout.EAST );
