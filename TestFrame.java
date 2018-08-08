@@ -8,13 +8,13 @@ class TestFrame extends Frame
     {
         super();
         setSize( 400, 400 );
-        setLayout( new FlowLayout() );
+        setLayout( new GridLayout( 3, 2 ) );
         setBackground( Color.lightGray );
-        add( new Button( "North" ), BorderLayout.NORTH );
-        add( new Button( "South" ), BorderLayout.SOUTH );
-        add( new Button( "East" ), BorderLayout.EAST );
-        add( new Button( "West" ), BorderLayout.WEST );
-        add( new Button( "Center" ), BorderLayout.CENTER );
+        add( new Button( "One" ) );
+        add( new Button( "Two" ) );
+        add( new Button( "Three" ) );
+        add( new Button( "Four" ) );
+        add( new Button( "Five" ) );
         setVisible(true);
     }
 
